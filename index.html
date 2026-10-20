@@ -11,8 +11,15 @@
         let nome = prompt("Digite seu nome:");
         let sobrenome = prompt("Digite seu sobrenome:");
         let anoNascimento = prompt("Digite seu ano de nascimento:");
-
+        const Nascimento = Number(anoNascimento);
+        const idade = Number(2026 - Nascimento);
         let alunoAtivo = confirm("É aluno ativo da instituição?");
+        const sNome = String(sobrenome.toUpperCase());
+        const Quant = Number(nome.length);
+        console.log("CRACHÁ VIRTUAL:", sNome, nome);
+        console.log("Idade estimada:", idade, "anos");
+        console.log("O seu primeiro nome tem", Quant, "letras");
+        console.log("Estatuto de aluno ativo:", alunoAtivo);
     </script>
 
 </body>
